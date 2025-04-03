@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Security</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+    header {
+        background-color: #343a40;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    footer {
+        background-color: #343a40;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+    span{
+        color:white;
+    }
+    .form-signin {
+        max-width: 400px;
+        margin: auto;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    #random {
+        margin: 20px 0;
+        padding: 10px;
+        background-color: #e9ecef;
+        border-radius: 5px;
+    }
+    #toggle {
+        cursor: pointer;
+        color: blue;
+        text-decoration: underline;
+    }
+    #toggle:hover {
+        color: darkblue;
+    }
+    </style>
+<body>
+    <header>
+        <h1>Welcome to Smart Security</h1>
+    </header>
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>Your trusted partner in security solutions.</p>
+            <div id="random"></div>
+            <div class="success">
+            </div>
+            <div class="error">
+            </div>
+        </section>
+        <form action="" class="form-signin card p-4">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <p id="toggle">Show</p>
+            <button type="submit" class=" btn-primary">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span ></span> Smart Security. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
