@@ -52,3 +52,27 @@ randomPassword()
 //     alert('Password will be changed in 10 seconds')
 // }, 10000)
 setInterval(randomPassword, 10000)
+
+
+function checkOnlineStatus() {
+    const online = document.querySelector(".online")
+    const offline = document.querySelector(".offline");
+    if (navigator.onLine) {
+      online.innerText="The user is online.";
+    } else {
+      offline.innerText="The user is offline.";
+    }
+  }
+  
+
+  window.addEventListener('online', () => {
+    online.innerText='The user is back online.';
+  });
+  
+  window.addEventListener('offline', () => {
+    offline.innerText='The user is offline.';
+  });
+  
+ 
+  checkOnlineStatus();
+  
